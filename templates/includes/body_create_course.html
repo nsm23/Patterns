@@ -1,0 +1,19 @@
+<div id="content_header"></div>
+<div id="site_content">
+    <div id="banner"></div>
+    <div id="sidebar_container">
+
+    </div>
+    <div id="content">
+        <h2 class="display-4">Create course</h2>
+        <form method="post" class="form-group">
+            <input type="text" name="name" placeholder="Название" class="form-control">
+            <select size="3" name="category" class="form-control">
+                {% for item in categories %}
+                <option value="{{item.id}}">{{item.name}}</option>
+                {% endfor %}
+            </select>
+            <button type="submit" class="btn btn-success">Save</button>
+        </form>
+    </div>
+</div>

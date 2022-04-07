@@ -1,0 +1,22 @@
+<h2 class="display-4">Список курсов:</h2>
+{% for item in objects_list %}
+<p>
+    {{ item.name }}<br>
+    <span class="text-muted">
+        <a href="/copy-course/?name={{item.name}}">Save</a>
+    </span>
+</p>
+{% endfor %}
+
+<h2 class="display-4">Список категорий:</h2>
+{% for item in objects_list %}
+<p>
+    {{ item.name }}
+    <br>
+    <span class="text-muted">
+        Количество курсов: {{ item.course_count() }}
+    </span>
+</p>
+{% endfor %}
+
+

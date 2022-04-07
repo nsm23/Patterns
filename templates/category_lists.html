@@ -1,16 +1,17 @@
 {% extends "base_page.html" %}
 {% block title %}
-    GB University
+    Lists
 {% endblock %}
 {% block style %}
+    {% include "lists/css_list.html" %}
     {% include "includes/style_css.html" %}
 {% endblock %}
 {% block menu %}
-    {% include "includes/menu_bar.html" %}
+{% include "includes/menu_creator.html" %}
 {% endblock %}
-{% block body %}
-    {% include "includes/body_index.html" %}
+{% block body%}
+    {% include "lists/body_list.html" %}
 {% endblock %}
 {% block footer %}
-    {% include "includes/footer.html" %}
+    {% include "lists/footer_list.html" %}
 {% endblock %}
